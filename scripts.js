@@ -27,4 +27,30 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "index.html";
     });
   }
+
+  const linkEstudiantes = document.getElementById("linkEstudiantes");
+  const linkAsignaturas = document.getElementById("linkAsignaturas");
+
+  const contenedorEstudiantes = document.getElementById(
+    "contenedorEstudiantes"
+  );
+  const contenedorAsignaturas = document.getElementById(
+    "contenedorAsignaturas"
+  );
+
+  if (linkEstudiantes) {
+    linkEstudiantes.addEventListener("click", (event) => {
+      event.preventDefault();
+      contenedorEstudiantes.classList.add("active");
+      contenedorAsignaturas.classList.remove("active");
+    });
+  }
+
+  if (linkAsignaturas) {
+    linkAsignaturas.addEventListener("click", (event) => {
+      event.preventDefault();
+      contenedorAsignaturas.classList.add("active");
+      contenedorEstudiantes.classList.remove("active");
+    });
+  }
 });
