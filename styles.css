@@ -97,3 +97,44 @@ main {
 .contenido.active {
   display: block;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tr:hover {
+  background: #ddd;
+}
+
+.btn-editar {
+  background: #ffd700;
+}
+
+.btn-editar:hover {
+  background: #ffc107;
+}
+
+.btn-eliminar {
+  background: #ff6347;
+}
+
+.btn-eliminar:hover {
+  background: #ff4500;
+}
